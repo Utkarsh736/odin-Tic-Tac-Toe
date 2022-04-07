@@ -10,6 +10,16 @@ const game = (() => {
 })();
 
 
+const players = (player) => {
+    const message = () => console.log('hello');
+    return {player, message};
+};
+
+const player1 = players('Rupert');
+
+
 
 console.log(`gameboard ${gameboard.add(3,5)}`);
-console.log(`game: ${game.add(4,2)}`)
+console.log(`game: ${game.add(4,2)}`);
+console.log(player1.player);
+player1.message();
