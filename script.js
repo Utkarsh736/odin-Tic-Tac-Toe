@@ -1,10 +1,9 @@
 const gameboard = (() => {
-    const add = (a,b)=>a+b;
-
-    return {add};
+    const board = ['X','X','X','O','O','O','X','O','X'];
+    return {board};
 })();
 
-const game = (() => {
+const displayController = (() => {
     const add = (a,b)=>a+b;
     return{add};
 })();
@@ -19,7 +18,4 @@ const player1 = players('Rupert');
 
 
 
-console.log(`gameboard ${gameboard.add(3,5)}`);
-console.log(`game: ${game.add(4,2)}`);
-console.log(player1.player);
-player1.message();
+console.log(gameboard.board);
